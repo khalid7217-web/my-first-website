@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <title>Khalid Future Tech 2040</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #00d2ff; }
+        p { font-size: 1.2rem; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="glass-card">
+        <h1>Khalid Sales & Service 2040</h1>
+        <p>የወደፊቱ የጥገና እና የኤሌክትሮኒክስ ቴክኖሎጂ እዚህ ይጀምራል!</p>
+        <button onclick="changeColor()" style="margin-top: 20px; padding: 10px 20px; border-radius: 10px; border: none; background: #00d2ff; color: #0f0c29; font-weight: bold; cursor: pointer;">
+    የ2040 ቀለም ቀይር
+</button>
+
+<script>
+    function changeColor() {
+        const colors = ['#0f0c29', '#302b63', '#24243e', '#1a1a2e', '#4b6cb7'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.background = randomColor;
+    }
+</script>
+    </div>
+</body>
+</html>

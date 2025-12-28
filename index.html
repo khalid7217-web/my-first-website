@@ -3,130 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalid | Ethiopia Future Tech 2040</title>
+    <title>Khalid Tech 2040 | ሁሉን አቀፍ የቴክኒክ አገልግሎት</title>
     <style>
         :root {
             --primary: #00f2fe;
             --secondary: #4facfe;
-            --accent: #ffd700; /* Ethiopian Gold */
-            --bg: #0a0a0c;
+            --dark: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
         }
-
         body {
             margin: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            overflow-x: hidden;
+            line-height: 1.6;
         }
-
-        /* የሚያብረቀርቅ የጀርባ ቀለም */
-        .background-blob {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(79,172,254,0.3) 0%, rgba(0,0,0,0) 70%);
-            z-index: -1;
-            filter: blur(50px);
-            animation: move 20s infinite alternate;
-        }
-
-        @keyframes move {
-            from { transform: translate(-10%, -10%); }
-            to { transform: translate(100%, 100%); }
-        }
-
-        /* Main Container */
-        .container {
+        /* Hero Section */
+        .hero {
+            height: 80vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            align-items: center;
             text-align: center;
             padding: 20px;
         }
-
-        /* Glassmorphism Card */
-        .hero-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
-            max-width: 800px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin: 0;
-            background: linear-gradient(to right, #fff, var(--primary));
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: -2px;
         }
-
-        p {
-            font-size: 1.2rem;
-            color: #ccc;
-            line-height: 1.6;
+        /* Services Section */
+        .services {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
-
-        .ethio-tag {
-            color: var(--accent);
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            display: block;
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
-
-        .btn {
-            background: linear-gradient(45deg, var(--secondary), var(--primary));
-            color: white;
-            border: none;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            cursor: pointer;
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: 0.3s;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 30px;
-            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.4);
         }
-
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            background: rgba(0, 242, 254, 0.05);
+        }
+        /* Contact Button */
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(79, 172, 254, 0.6);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
         }
     </style>
 </head>
 <body>
-    <div class="background-blob"></div>
-    
-    <div class="container">
-        <div class="hero-card">
-            <span class="ethio-tag">Ethio-Futurism Project</span>
-            <h1>KHALID TECH 2040</h1>
-            <p>በኢትዮጵያ የቴክኖሎጂ አድማስ ላይ አዲስ አሻራ ለመጣል የተዘጋጀ። እኛ ወደፊት የምንሄደው ዛሬ በምንሰራው ጥበብ ነው። ጥንካሬ፣ ውበት፣ እና ብቃት!</p>
-            <a href="#" class="btn">የወደፊቱን አብረን እንገንባ</a>
-        </div>
-    </div>
+
+    <section class="hero">
+        <p style="color: var(--primary); letter-spacing: 2px;">ETHIO-FUTURISM 2040</p>
+        <h1>KHALID SALES & SERVICE</h1>
+        <p style="max-width: 600px; font-size: 1.2rem;">ለዘመኑ የሚመጥን የቴክኒክ ጥገና፣ የሶፍትዌር ማሻሻያ እና የቴክኖሎጂ ምክር አገልግሎት በአንድ ቦታ!</p>
+        <a href="tel:+251911000000" class="btn">አሁኑኑ ይደውሉ</a> </section>
+
     <section class="services">
-    <h2>የምንሰጣቸው አገልግሎቶች</h2>
-    <div class="service-grid">
-        <div class="service-card">
-            <h3>የቴክኒክ ጥገና</h3>
-            <p>ለማንኛውም የኤሌክትሮኒክስ እቃዎች ጥገና እናደርጋለን።</p>
+        <h2 style="text-align: center; margin-bottom: 40px;">ልዩ አገልግሎቶቻችን</h2>
+        <div class="service-grid">
+            <div class="card">
+                <h3>🛠️ የቴክኒክ ጥገና</h3>
+                <p>ማንኛውንም የኤሌክትሮኒክስ እቃዎች (ስልኮች፣ ላፕቶፖች) በታማኝነት እንጠግናለን።</p>
+            </div>
+            <div class="card">
+                <h3>💻 የሶፍትዌር አገልግሎት</h3>
+                <p>ኦፕሬቲንግ ሲስተም መጫን፣ ቫይረስ ማጽዳት እና የፍጥነት ማሻሻያ ስራዎችን እንሰራለን።</p>
+            </div>
+            <div class="card">
+                <h3>📡 የኔትወርክ ዝርጋታ</h3>
+                <p>ለቤትዎ ወይም ለቢሮዎ ፈጣንና አስተማማኝ የዋይፋይ እና የኔትወርክ ዝርጋታ።</p>
+            </div>
         </div>
-        <div class="service-card">
-            <h3>የሶፍትዌር ማሻሻያ</h3>
-            <p>ስልኮችን እና ኮምፒውተሮችን እናዘምናለን።</p>
-        </div>
-    </div>
-</section>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: rgba(255,255,255,0.5);">
+        <p>&copy; 2025 Khalid Tech. መብቱ የተጠበቀ ነው።</p>
+    </footer>
+
 </body>
 </html>

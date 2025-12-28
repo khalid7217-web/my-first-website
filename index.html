@@ -3,105 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalid Tech | Home Appliance Specialist</title>
+    <title>Ethio K-Tech | All-In-One Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --p: #00f2fe; --s: #4facfe; --bg: #0f172a; }
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: white; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: white; scroll-behavior: smooth; }
         
-        /* Language Bar */
-        .lang-bar { background: rgba(0,0,0,0.5); padding: 12px; text-align: center; border-bottom: 1px solid var(--p); }
-        .lang-bar a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 15px; }
-        .lang-bar a:hover { color: var(--p); }
+        /* Navigation & Languages */
+        nav { background: rgba(15, 23, 42, 0.9); padding: 15px; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--p); }
+        .nav-logo { font-weight: bold; color: var(--p); font-size: 1.2rem; }
+        .lang-links a { color: white; margin-left: 15px; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        .lang-links a:hover { color: var(--p); }
 
-        /* Hero Area */
-        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(to bottom, #1e293b, var(--bg)); }
-        .logo { font-size: 60px; font-weight: bold; color: var(--p); text-shadow: 0 0 20px var(--p); margin-bottom: 10px; }
+        /* Hero Section */
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(to bottom, #1e293b, var(--bg)); }
+        .hero h1 { font-size: 3rem; margin: 10px 0; background: linear-gradient(to right, var(--p), #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2rem; color: #cbd5e1; max-width: 800px; margin: 0 auto; }
 
         /* Services Grid */
-        .services { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        .services { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .card { background: rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; border: 1px solid #334155; transition: 0.4s; }
-        .card:hover { border-color: var(--p); transform: translateY(-10px); }
-        .card img { width: 100%; height: 200px; object-fit: cover; opacity: 0.8; }
-        .card-content { padding: 20px; text-align: center; }
-        .card i { font-size: 30px; color: var(--p); margin-bottom: 10px; }
+        .card { background: rgba(255,255,255,0.03); border-radius: 20px; overflow: hidden; border: 1px solid #334155; transition: 0.4s; }
+        .card:hover { border-color: var(--p); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1); }
+        .card img { width: 100%; height: 220px; object-fit: cover; }
+        .card-content { padding: 25px; text-align: center; }
+        .card h3 { color: var(--p); margin-bottom: 10px; }
 
         /* Contact Section */
-        .contact-box { text-align: center; padding: 60px 20px; background: rgba(255,255,255,0.02); }
-        .btn { display: inline-block; padding: 15px 30px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; }
-        .call { background: #22c55e; }
-        .tele { background: #24A1DE; }
-        .social { background: #334155; opacity: 0.5; cursor: not-allowed; }
-        .btn:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.3); transform: scale(1.05); }
+        .contact { padding: 80px 20px; text-align: center; background: rgba(255,255,255,0.02); }
+        .btn { display: inline-block; padding: 15px 35px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; border: none; cursor: pointer; }
+        .call { background: linear-gradient(45deg, #22c55e, #16a34a); }
+        .tele { background: linear-gradient(45deg, #0088cc, #24A1DE); }
+        .social-disabled { background: #334155; opacity: 0.5; pointer-events: none; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+        footer { text-align: center; padding: 40px; color: #64748b; border-top: 1px solid #334155; }
     </style>
 </head>
 <body>
 
-<div class="lang-bar">
-    <a href="#">አማርኛ</a>
-    <a href="#">Oromiffa</a>
-    <a href="#">ትግርኛ</a>
-</div>
+<nav>
+    <div class="nav-logo">ETHIO K-TECH</div>
+    <div class="lang-links">
+        <a href="#">አማርኛ</a>
+        <a href="#">Oromiffa</a>
+        <a href="#">ትግርኛ</a>
+    </div>
+</nav>
 
 <section class="hero">
-    <div class="logo">K <span style="color:white">TECH</span></div>
-    <h1>የቤት ውስጥ መገልገያ እቃዎች ጥገና</h1>
-    <p style="font-size: 1.2rem; color: #cbd5e1;">CCTV | Fridge | Washing Machine | Oven</p>
+    <div style="font-size: 1.5rem; color: var(--p); letter-spacing: 3px;">RELIABLE & SMART</div>
+    <h1>Ethio K-Tech All-In-One Solutions</h1>
+    <p>የቤት ውስጥ መገልገያ እቃዎች ጥገና፣ የደህንነት ካሜራ ዝርጋታ እና የቴክኖሎጂ አማካሪ በአንድ ቦታ!</p>
+    <a href="#contact" class="btn call">አሁኑኑ ያግኙን</a>
 </section>
 
 <section class="services">
+    <h2 class="section-title">ልዩ አገልግሎቶቻችን</h2>
     <div class="grid">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=500" alt="CCTV">
             <div class="card-content">
-                <i class="fas fa-video"></i>
                 <h3>CCTV Camera</h3>
-                <p>የደህንነት ካሜራ ዝርጋታ እና ጥገና በዘመናዊ መንገድ።</p>
-            </div>
+                <p>አስተማማኝ የደህንነት ካሜራ ዝርጋታ እና የክትትል ሲስተም ጥገና።</p>
+                </div>
         </div>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500" alt="Fridge">
             <div class="card-content">
-                <i class="fas fa-snowflake"></i>
-                <h3>ፍሪጅ (Fridge)</h3>
-                <p>ማንኛውንም አይነት ፍሪጅ እና ኤርኮንዲሽነር ጥገና።</p>
+                <h3>ፍሪጅ & ኤርኮንዲሽነር</h3>
+                <p>የማቀዝቀዣ እቃዎችን በላቀ ጥራት እና በዋስትና እንጠግናለን።</p>
             </div>
         </div>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500" alt="Washing Machine">
             <div class="card-content">
-                <i class="fas fa-tshirt"></i>
-                <h3>የልብስ ማጠቢያ</h3>
-                <p>የልብስ ማጠቢያ ማሽኖችን (Washing Machine) እንጠግናለን።</p>
+                <h3>የልብስ ማጠቢያ ማሽን</h3>
+                <p>ማንኛውንም አይነት የልብስ ማጠቢያ ማሽን (Automatic & Semi) ጥገና።</p>
             </div>
         </div>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=500" alt="Oven">
             <div class="card-content">
-                <i class="fas fa-fire"></i>
-                <h3>Oven & Stove</h3>
-                <p>የኤሌክትሪክ ምድጃ፣ ኦቨን እና ማይክሮዌቭ ጥገና።</p>
+                <h3>ምድጃ & ኦቨን</h3>
+                <p>የኤሌክትሪክ ምድጃዎች፣ ማይክሮዌቭ እና ኦቨን ጥገና አገልግሎት።</p>
             </div>
         </div>
     </div>
 </section>
 
-<div class="contact-box">
-    <h2>አሁኑኑ ያግኙን</h2>
+<section class="contact" id="contact">
+    <h2>ጥያቄ አለዎት? ይደውሉልን</h2>
+    <p style="color: #94a3b8; margin-bottom: 30px;">በፍጥነት መጥተን ችግርዎን ለመፍታት ዝግጁ ነን።</p>
     <a href="tel:+251911637614" class="btn call"><i class="fas fa-phone"></i> 0911637614</a>
     <a href="tel:+251706646564" class="btn call"><i class="fas fa-phone"></i> 0706646564</a>
     <a href="https://t.me/kalid7217" class="btn tele"><i class="fab fa-telegram"></i> Telegram (@kalid7217)</a>
-    <div style="margin-top: 20px;">
-        <p style="color: #64748b;">በቅርቡ የሚከፈቱ ገጾች፡</p>
-        <a href="#" class="btn social"><i class="fab fa-tiktok"></i> TikTok</a>
-        <a href="#" class="btn social"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="#" class="btn social"><i class="fab fa-facebook"></i> Facebook</a>
+    
+    <div style="margin-top: 40px;">
+        <p style="color: #64748b; font-size: 0.9rem;">በቅርቡ የሚከፈቱ የማኅበራዊ ሚዲያ ገጾች፡</p>
+        <a href="#" class="btn social-disabled"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="#" class="btn social-disabled"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="#" class="btn social-disabled"><i class="fab fa-facebook"></i> Facebook</a>
     </div>
-</div>
+</section>
 
-<footer style="text-align: center; padding: 30px; color: #64748b; border-top: 1px solid #334155;">
-    <p>&copy; 2025 Khalid Tech. በታማኝነት እናገለግላለን!</p>
+<footer>
+    <p>Ethio K-Tech All-In-One Solutions &copy; 2025</p>
+    <p style="font-size: 0.8rem;">ታማኝነት፣ ጥራት እና ፍጥነት መለያችን ነው!</p>
 </footer>
 
 </body>

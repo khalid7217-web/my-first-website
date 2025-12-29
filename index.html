@@ -3,20 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethio K-Tech Service</title>
+    <title>Ethio K-Tech Service | የጥገና ባለሙያ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; background-color: #001f3f; color: white; text-align: center; padding: 50px; }
-        .contact { background: #003366; padding: 20px; border-radius: 10px; margin-top: 20px; }
-        h1 { color: #ffcc00; }
+        /* የባለሙያ ዲዛይን ቅንብር */
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0f172a; color: white; margin: 0; line-height: 1.6; }
+        
+        /* Header */
+        nav { background: #1e293b; padding: 20px; text-align: center; border-bottom: 3px solid #38bdf8; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: #38bdf8; text-transform: uppercase; }
+
+        /* Hero Section */
+        .hero { padding: 80px 20px; background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; text-align: center; }
+        .hero h1 { font-size: 2.8rem; color: #ffffff; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; color: #cbd5e1; max-width: 700px; margin: 0 auto; }
+
+        /* Services Section */
+        .services { padding: 50px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #1e293b; padding: 30px; border-radius: 15px; border: 1px solid #334155; transition: 0.3s; text-align: center; }
+        .card:hover { transform: translateY(-10px); border-color: #38bdf8; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .card i { font-size: 3.5rem; color: #38bdf8; margin-bottom: 20px; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #f8fafc; }
+
+        /* Contact Section */
+        .contact-box { background: #003366; padding: 40px; border-radius: 20px; margin: 50px auto; max-width: 800px; text-align: center; border: 2px solid #38bdf8; }
+        .btn { background: #38bdf8; color: #0f172a; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; display: inline-block; transition: 0.3s; margin-top: 20px; }
+        .btn:hover { background: #ffffff; }
+
+        footer { padding: 20px; text-align: center; background: #0f172a; color: #64748b; border-top: 1px solid #334155; }
     </style>
 </head>
 <body>
-    <h1>Ethio K-Tech Service</h1>
-    <p>በቴክኖሎጂ የታገዘ ጥራት ያለው አገልግሎት</p>
-    <div class="contact">
-        <h2>ያግኙን (Contact Us)</h2>
-        <p>📧 ኢሜይል: ethio.k.tech.service77@gmail.com</p>
-        <p>📞 ስልክ: [የአንተን ስልክ እዚህ አስገባ]</p>
+
+    <nav><div class="logo">Ethio K-Tech Service</div></nav>
+
+    <div class="hero">
+        <h1>በቴክኖሎጂ የታገዘ ጥራት ያለው አገልግሎት</h1>
+        <p>የ CCTV ካሜራ ገጠማ፣ የፍሪጅ እና የልብስ ማጠቢያ ማሽን ጥገና በታማኝነት እና በጥራት እንሰጣለን።</p>
     </div>
+
+    <div class="services">
+        <div class="card">
+            <i class="fas fa-video"></i>
+            <h3>CCTV ካሜራ</h3>
+            <p>ዘመናዊ የደህንነት ካሜራዎችን እንገጥማለን፣ እንጠግናለን። ለቤትዎ እና ለድርጅትዎ አስተማማኝ ጥበቃ።</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-snowflake"></i>
+            <h3>የፍሪጅ ጥገና</h3>
+            <p>ማንኛውንም አይነት ፍሪጅ ካሉበት ቦታ ድረስ መጥተን በፍጥነት እና በዋስትና እንጠግናለን።</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-soap"></i>
+            <h3>ልብስ ማጠቢያ ማሽን</h3>
+            <p>የልብስ ማጠቢያ ማሽን ብልሽቶችን በባለሙያ እና በኦሪጅናል መለዋወጫዎች እናስተካክላለን።</p>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <h2>ለአስተማማኝ አገልግሎት ያግኙን</h2>
+        <p style="font-size: 1.3rem;">📧 ኢሜይል: ethio.k.tech.service77@gmail.com</p>
+        <p style="font-size: 1.3rem;">📞 ስልክ: 0912345678 (ስልክህን እዚህ አስተካክለው)</p>
+        <a href="mailto:ethio.k.tech.service77@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> መልእክት ላክ</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Ethio K-Tech Service. All rights reserved.
+    </footer>
+
 </body>
 </html>

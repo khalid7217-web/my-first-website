@@ -202,5 +202,35 @@
             document.getElementById('repair-text').innerText = content[lang].repairP;
         }
     </script>
+    <section id="order-section" style="padding: 50px 5%; background: #112240; border-radius: 15px; margin: 20px;">
+    <h2 style="text-align: center; color: #64ffda;">ትዕዛዝ ይላኩ / Send Order</h2>
+    <form id="orderForm" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" id="cust_name" placeholder="ስም / Name" required style="padding: 12px; border-radius: 5px; border: none;">
+        <input type="tel" id="cust_phone" placeholder="ስልክ / Phone" required style="padding: 12px; border-radius: 5px; border: none;">
+        <select id="service_type" style="padding: 12px; border-radius: 5px; border: none;">
+            <option value="Electronics">ኤሌክትሮኒክስ (Electronics)</option>
+            <option value="Repair">ጥገና (Repair)</option>
+            <option value="Accessory">አክሰሰሪ (Accessory)</option>
+        </select>
+        <button type="submit" class="btn" style="cursor: pointer; border: none;">አሁኑኑ ይዘዙ (Submit Order)</button>
+    </form>
+</section>
+
+<script>
+    // ፎርሙ ሲላክ ወደ Backend እና ወደ Telegram ቦት እንዲሄድ የሚያደርግ
+    document.getElementById('orderForm').onsubmit = async (e) => {
+        e.preventDefault();
+        
+        const data = {
+            name: document.getElementById('cust_name').value,
+            phone: document.getElementById('cust_phone').value,
+            service: document.getElementById('service_type').value
+        };
+
+        // እዚህ ጋር በ PHP ወይም Python በኩል ወደ MySQL እና Telegram የሚልክ ኮድ ይገባል
+        alert("ትዕዛዝዎ ደርሶናል። እናመሰግናለን!");
+        document.getElementById('orderForm').reset();
+    };
+</script>
 </body>
 </html>

@@ -1,236 +1,59 @@
-🍅 Khalid Mohammed $X, [12/29/2025 4:44 PM]
 <!DOCTYPE html>
 <html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethio K-Tech Service & Sales</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #0a192f;
-            --secondary-color: #64ffda;
-            --text-white: #e6f1ff;
-            --card-bg: #112240;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--primary-color);
-            color: var(--text-white);
-            line-height: 1.6;
-        }
-
-        /* Navigation & Language Switcher */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            background: rgba(10, 25, 47, 0.95);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-
-        .lang-switch button {
-            background: transparent;
-            border: 1px solid var(--secondary-color);
-            color: var(--secondary-color);
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-left: 5px;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--secondary-color);
-        }
-
-        /* Categories Section */
-        .container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            transition: transform 0.3s;
-            border-bottom: 4px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            border-bottom: 4px solid var(--secondary-color);
-        }
-
-        .card i {
-            font-size: 3rem;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: var(--secondary-color);
-            color: var(--primary-color);
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #020c1b;
-        }
-
-        .social-links a {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            margin: 0 15px;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-        }
-    </style>
+    <title>Ethio K-Tech | ትዕዛዝ መስጫ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-white font-sans">
 
-    <nav>
-        <div class="logo">ETHIO K-TECH</div>
-        <div class="lang-switch">
-            <button onclick="changeLang('am')">አማርኛ</button>
-            <button onclick="changeLang('or')">Oromoo</button>
-            <button onclick="changeLang('en')">EN</button>
-        </div>
+    <nav class="p-5 border-b border-slate-700 bg-slate-800 text-center text-cyan-400 font-bold text-xl shadow-lg">
+        ኢትዮ ኬ-ቴክ (Ethio K-Tech)
     </nav>
 
-    <section class="hero">
-        <h1 id="hero-title">ኢትዮ ኬ-ቴክ የቴክኖሎጂ ማዕከል</h1>
-        <p id="hero-sub">የኤሌክትሮኒክስ ሽያጭ፣ የሞባይል አክሰሰሪ እና አስተማማኝ ጥገና</p>
-    </section>
-<div class="container">
-        <div class="card">
-            <i class="fas fa-shopping-cart"></i>
-            <h3 id="sales-title">የእቃዎች ሽያጭ</h3>
-            <p id="sales-text">ሞባይል አክሰሰሪዎች፣ የጥገና መሣሪያዎች እና ማንኛውንም የኤሌክትሮኒክስ እቃዎች ትዕዛዝ እንቀበላለን።</p>
-            <a href="https://t.me/yourusername" class="btn"><i class="fab fa-telegram"></i> አሁኑኑ ይዘዙ</a>
-        </div>
-
-        <div class="card">
-            <i class="fas fa-tools"></i>
-            <h3 id="repair-title">የጥገና አገልግሎት</h3>
-            <p id="repair-text">የፍሪጅ፣ የልብስ ማጠቢያ ማሽን፣ CCTV እና የቤት ውስጥ መገልገያዎች ጥገና በባለሙያ።</p>
-            <a href="tel:+251912345678" class="btn"><i class="fas fa-phone"></i> ይደውሉልን</a>
+    <div class="flex items-center justify-center mt-10 p-4">
+        <div class="w-full max-w-md p-8 bg-slate-800 rounded-2xl border border-slate-700 shadow-2xl">
+            <h2 class="text-2xl font-bold mb-6 text-center text-cyan-400">ትዕዛዝ ይላኩ</h2>
+            
+            <form id="orderForm" class="space-y-4">
+                <input type="text" id="name" placeholder="ስም" class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 outline-none focus:border-cyan-500" required>
+                <input type="tel" id="phone" placeholder="ስልክ" class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 outline-none focus:border-cyan-500" required>
+                <textarea id="message" placeholder="ፍላጎትዎ..." class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 outline-none focus:border-cyan-500 h-24" required></textarea>
+                <button type="submit" class="w-full bg-cyan-600 py-3 rounded-lg font-bold hover:bg-cyan-500 transition-all active:scale-95 shadow-lg">ትዕዛዝ ላክ</button>
+            </form>
         </div>
     </div>
 
-    <footer>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2025 Ethio K-Tech Service. All rights reserved.</p>
-    </footer>
-
     <script>
-        const content = {
-            am: {
-                heroT: "ኢትዮ ኬ-ቴክ የቴክኖሎጂ ማዕከል",
-                heroS: "የኤሌክትሮኒክስ ሽያጭ፣ የሞባይል አክሰሰሪ እና አስተማማኝ ጥገና",
-                salesT: "የእቃዎች ሽያጭ",
-                salesP: "ሞባይል አክሰሰሪዎች፣ የጥገና መሣሪያዎች እና ማንኛውንም የኤሌክትሮኒክስ እቃዎች ትዕዛዝ እንቀበላለን።",
-                repairT: "የጥገና አገልግሎት",
-                repairP: "የፍሪጅ፣ የልብስ ማጠቢያ ማሽን፣ CCTV እና የቤት ውስጥ መገልገያዎች ጥገና በባለሙያ።"
-            },
-            or: {
-                heroT: "Giddu-gala Teeknoolojii Ethio K-Tech",
-                heroS: "Gurgurtaa Elektirooniksii, Meeshaalee Moobaayilaa fi Suphaa Amanamaa",
-                salesT: "Gurgurtaa Meeshaalee",
-                salesP: "Meeshaalee moobaayilaa, meeshaalee suphaa fi ajaja meeshaalee elektirooniksii kamiyyuu ni fudhanna.",
-                repairT: "Tajaajila Suphaa",
-                repairP: "Suphaa firiijii, maashinii uffata qulqulleessu, CCTV fi meeshaalee mana keessaa ogeessaan.",
-            },
-            en: {
-                heroT: "Ethio K-Tech Technology Center",
-                heroS: "Electronics Sales, Mobile Accessories & Reliable Repair",
-                salesT: "Product Sales",
-                salesP: "We accept orders for mobile accessories, repair tools, and any electronic devices.",
-                repairT: "Repair Services",
-                repairP: "Professional repair for fridges, washing machines, CCTV, and home appliances."
-            }
-        };
+        // አዲሱ ቦት ቶከን (Token) እና ያንተ Chat ID
+        const BOT_TOKEN = '8205562982:AAGD7uUO4IiHWfhPTt_nRQX1T7';
+        const CHAT_ID = '1552206721';
 
-        function changeLang(lang) {
-            document.getElementById('hero-title').innerText = content[lang].heroT;
-            document.getElementById('hero-sub').innerText = content[lang].heroS;
-            document.getElementById('sales-title').innerText = content[lang].salesT;
-            document.getElementById('sales-text').innerText = content[lang].salesP;
-            document.getElementById('repair-title').innerText = content[lang].repairT;
-            document.getElementById('repair-text').innerText = content[lang].repairP;
-        }
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // መልዕክቱን ማዘጋጀት
+            const text = 🚀 አዲስ ትዕዛዝ ደርሷል!\n\n👤 ስም: ${name}\n📞 ስልክ: ${phone}\n📝 ፍላጎት: ${message};
+            
+            // ወደ ቴሌግራም መላኪያ ሊንክ
+            const url = https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(text)};
+
+            fetch(url)
+            .then(res => {
+                if(res.ok) {
+                    alert('✅ ትዕዛዝዎ በተሳካ ሁኔታ ተልኳል!');
+                    document.getElementById('orderForm').reset();
+                } else {
+                    alert('❌ ስህተት! እባክህ ቦቱን START ማለታችሁን አረጋግጡ።');
+                }
+            })
+            .catch(() => alert('⚠️ የኢንተርኔት ግንኙነትዎን ያረጋግጡ።'));
+        });
     </script>
-    <section id="order-section" style="padding: 50px 5%; background: #112240; border-radius: 15px; margin: 20px;">
-    <h2 style="text-align: center; color: #64ffda;">ትዕዛዝ ይላኩ / Send Order</h2>
-    <form id="orderForm" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
-        <input type="text" id="cust_name" placeholder="ስም / Name" required style="padding: 12px; border-radius: 5px; border: none;">
-        <input type="tel" id="cust_phone" placeholder="ስልክ / Phone" required style="padding: 12px; border-radius: 5px; border: none;">
-        <select id="service_type" style="padding: 12px; border-radius: 5px; border: none;">
-            <option value="Electronics">ኤሌክትሮኒክስ (Electronics)</option>
-            <option value="Repair">ጥገና (Repair)</option>
-            <option value="Accessory">አክሰሰሪ (Accessory)</option>
-        </select>
-        <button type="submit" class="btn" style="cursor: pointer; border: none;">አሁኑኑ ይዘዙ (Submit Order)</button>
-    </form>
-</section>
-
-<script>
-    // ፎርሙ ሲላክ ወደ Backend እና ወደ Telegram ቦት እንዲሄድ የሚያደርግ
-    document.getElementById('orderForm').onsubmit = async (e) => {
-        e.preventDefault();
-        
-        const data = {
-            name: document.getElementById('cust_name').value,
-            phone: document.getElementById('cust_phone').value,
-            service: document.getElementById('service_type').value
-        };
-
-        // እዚህ ጋር በ PHP ወይም Python በኩል ወደ MySQL እና Telegram የሚልክ ኮድ ይገባል
-        alert("ትዕዛዝዎ ደርሶናል። እናመሰግናለን!");
-        document.getElementById('orderForm').reset();
-    };
-</script>
 </body>
 </html>
